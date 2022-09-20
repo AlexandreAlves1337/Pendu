@@ -1,0 +1,115 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/fond.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    height:100vh;
+    background-color: rgba(255, 255, 255, .85);
+}
+
+section {
+    width:100%; 
+    margin: auto; 
+}
+
+div, h1, h2, p {
+    padding:8px 0; 
+    text-align: center;
+}
+
+img {width:300px;
+    padding:4px
+}
+
+#nombreerreur {
+    width:300px;
+    margin:0 auto;
+    color:#fff;
+    font-weight: bolder;
+}
+
+#motAffichable{
+    letter-spacing: .2em;
+    text-align: center;
+    font-size: 3em;
+}
+
+#buttonGlo {
+    text-align: center;
+}
+
+#buttonGlo button {
+   width: 30px;
+   padding: 2px;
+   margin: 2px;
+}
+
+#nombreerreur .color0, img[src$="pendu0.png"] {background-color:#008000}
+#nombreerreur .color1, img[src$="pendu1.png"] {background-color:#1a8000}
+#nombreerreur .color2, img[src$="pendu2.png"] {background-color:#3e8000}
+#nombreerreur .color3, img[src$="pendu3.png"] {background-color:#498000}
+#nombreerreur .color4, img[src$="pendu4.png"] {background-color:#778000}
+#nombreerreur .color5, img[src$="pendu5.png"] {background-color:#806200}
+#nombreerreur .color6, img[src$="pendu6.png"] {background-color:#804900}
+#nombreerreur .color7, img[src$="pendu7.png"] {background-color:#803a00}
+#nombreerreur .color8, img[src$="pendu8.png"] {background-color:#802400}
+#nombreerreur .color9, img[src$="pendu9.png"] {background-color:#801300}
+#nombreerreur .color10, img[src$="pendu10.png"] {background-color:#800000}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #motAffichable {
+        letter-spacing: .2em;
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #motAffichable{
+        letter-spacing: .2em;
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #buttonGlo button {
+        width: 20px;
+        padding: 1px;
+        margin: 1px;
+    }
+
+    img {
+        width:90%;
+    }
+
+    #motAffichable{
+        letter-spacing: .1em;
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 220px) {
+    #buttonGlo button {
+        width: 16px;
+        padding: 0;
+        margin: 1px;
+    }
+}
